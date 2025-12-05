@@ -1,0 +1,55 @@
+<!-- fragments/navbar.html -->
+<nav th:fragment="navbar"
+     class="navbar navbar-expand-lg navbar-light navbar-soft">
+    <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" th:href="@{/home}">
+            <img th:src="@{/img/logo.jpg}" alt="logo" class="navbar-logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/home}">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/home} + '#chi-siamo'">Chi siamo</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                       id="navbarApprofondimenti" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Servizi
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarServizi">
+                        <li><a class="dropdown-item" th:href="@{/bustepaga}">Elaborazione Buste Paga</a></li>
+                        <li><a class="dropdown-item" th:href="@{/amministrazione}">Consulenza e Amministrazione Del Personale</a></li>
+                        <li><a class="dropdown-item" th:href="@{/consulenza}">Consulenza Del Lavoro</a></li>
+                    </ul>
+                </li>
+
+                <!-- CTA -->
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a class="btn btn-nav-cta" th:href="@{/contatti}">
+                        Richiedi una consulenza
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

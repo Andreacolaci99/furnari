@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CONSULENZA E AMMINISTRAZIONE DEL PERSONALE</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Il tuo CSS -->
+    <link rel="stylesheet" th:href="@{/css/application.css}">
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+    <div th:replace="~{fragments/navbar}"></div>
+
+
+    <!-- CONTENUTO PAGINA -->
+    <main class="container" style="min-height: 80vh; padding-top: 2rem;">
+
+        <!-- TITOLO PAGINA -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold" style="color: #2f3b52;">Consulenza e Amministrazione del Personale</h1>
+
+            <p class="text-soft mt-3 mx-auto" style="max-width: 800px;">
+                Lo Studio Furnari offre servizi altamente qualificati di consulenza e amministrazione del personale.
+                Grazie alla lunga esperienza nel settore, il nostro team è in grado di analizzare l’organizzazione
+                aziendale
+                e individuare le soluzioni più efficaci per una gestione corretta e sostenibile del personale.
+            </p>
+        </div>
+
+        <!-- CARD SERVIZI -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="p-4 rounded shadow-sm bg-white mb-4">
+                        <h2 class="h5 mb-3">Servizi di amministrazione del personale</h2>
+
+                        <ul class="text-soft" style="line-height: 1.7;">
+                            <li>Adempimenti di inizio attività aziendale (iscrizione INPS, denuncia esercizio INAIL)
+                            </li>
+                            <li>Denunce di variazione e cessazione della posizione aziendale</li>
+                            <li>Pratiche di instaurazione, modifica e cessazione dei rapporti di lavoro subordinato</li>
+                            <li>Assistenza per assunzioni agevolate</li>
+                            <li>Gestione distacchi di personale in Italia e all’estero</li>
+                            <li>Predisposizione accordi individuali</li>
+                            <li>Assistenza nei rapporti di stage</li>
+                            <li>Predisposizione contratti di collaborazione coordinata e continuativa</li>
+                            <li>Gestione rapporti di lavoro parasubordinato</li>
+                            <li>Stesura contratti di lavoro autonomo (collaborazioni occasionali, prestazioni d'opera,
+                                agenzie, ecc.)</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center mb-5">
+                        <img th:src="@{/img/staff2.jpg}" alt="staff2" class="img-fluid rounded shadow-sm"
+                            style="max-height: 320px; object-fit: cover;">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- COLF E BADANTI -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <h2 class="fw-bold mb-3" style="color: #2f3b52;">Colf e badanti</h2>
+
+                    <p class="text-soft mb-3">
+                        La struttura presieduta dal Dott. Furnari offre servizi completi per la gestione del lavoro
+                        domestico,
+                        garantendo assistenza continua e puntuale nella gestione di colf e badanti.
+                    </p>
+
+                    <div class="p-4 rounded shadow-sm bg-white">
+                        <h3 class="h6 mb-3">Servizi offerti</h3>
+
+                        <ul class="text-soft" style="line-height: 1.7;">
+                            <li>Supporto per gli obblighi dei datori di lavoro domestico</li>
+                            <li>Certificazioni annuali</li>
+                            <li>Elaborazione cedolino paga per lavoro domestico</li>
+                            <li>Comunicazioni obbligatorie agli enti competenti</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div th:replace="~{fragments/footer}"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
