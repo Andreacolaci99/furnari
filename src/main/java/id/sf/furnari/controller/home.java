@@ -26,4 +26,14 @@ public class home {
     public String consulenza() {
         return "consulenza";
     }
+
+    @GetMapping("/privacy")
+    public String privacy() {
+        return "privacy";
+    }
+
+     @GetMapping("/contattaci")
+    public String contattaci() {
+        return "contattaci";
+    }
 }

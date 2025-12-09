@@ -125,29 +125,43 @@ body {
     }
 }
 /* FOOTER NERO */
-.footer-black {
-    background: #000000 !important;
-    border-top: 1px solid #111 !important;
+/* ------------------------- */
+/* FOOTER NERO               */
+/* ------------------------- */
+
+.footer-soft {
+    background-color: #1f242b;          /* Scuro ma più elegante del nero assoluto */
+    border-top: 1px solid #2c323a;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #c8cdd4;                     /* Testo tenue */
 }
 
-.footer-black .footer-text {
-    color: #d9d9d9 !important;
+.footer-soft h5 {
+    color: #f2f2f2;                     /* Titolo più chiaro */
 }
 
-.footer-black strong {
-    color: #ffffff !important;
+.footer-soft strong {
+    color: #eaeaea;                     /* Evidenziazione delicata */
 }
 
-.footer-black .footer-link {
-    color: #7aa2ff !important;
+.footer-soft .footer-text {
+    color: #c8cdd4;
+}
+
+.footer-soft .footer-link {
+    color: #7fa6d9;                     /* Blu tenue professionale */
     text-decoration: none;
     font-size: 0.9rem;
+    transition: color 0.2s ease;
 }
 
-.footer-black .footer-link:hover {
-    color: #bcd0ff !important;
+.footer-soft .footer-link:hover {
+    color: #b8cff0;                     /* Blu più chiaro all'hover */
     text-decoration: underline;
 }
+
+
 
 
 

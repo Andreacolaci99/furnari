@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CONTATTACI</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Il tuo CSS -->
+    <link rel="stylesheet" th:href="@{/css/application.css}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<!-- CONTENUTO PAGINA -->
+<main class="container" style="min-height: 80vh; padding-top: 2rem;">
+
+    <!-- TITOLO PAGINA -->
+    <div class="text-center mb-5">
+        <h1 class="fw-bold" style="color: #2f3b52;">Contattaci</h1>
+        <p class="text-soft mt-2">Inviaci un messaggio: ti risponderemo nel più breve tempo possibile.</p>
+    </div>
+
+    <!-- CONTENUTO -->
+    <section id="contatti" class="mb-5">
+        <div class="row g-4">
+
+            <!-- FORM CONTATTO -->
+            <div class="col-lg-7">
+                <div class="p-4 rounded shadow-sm bg-white">
+                    <h2 class="h5 mb-3" style="color:#2f3b52;">Invia un messaggio</h2>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome e cognome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Inserisci il tuo nome">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nome@esempio.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="messaggio" class="form-label">Messaggio</label>
+                            <textarea class="form-control" id="messaggio" rows="4"
+                                      placeholder="Scrivi qui la tua richiesta..."></textarea>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="privacyCheck">
+                            <label class="form-check-label text-soft" for="privacyCheck">
+                                Dichiaro di aver preso visione e di accettare
+                                l'<a th:href="@{/privacy}" class="footer-link">
+                                informativa sulla privacy</a> ed autorizzo il trattamento
+                                dei miei dati personali nei termini e con le modalità ivi indicati.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-nav-cta">
+                            Invia richiesta
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- RECAPITI A FIANCO -->
+            <div class="col-lg-5">
+                <div class="p-4 rounded shadow-sm bg-white h-100">
+                    <h2 class="h5 mb-3" style="color:#2f3b52;">Dove siamo e contatti</h2>
+
+                    <p class="text-soft mb-2">
+                        <strong>Studio Furnari &amp; Partners</strong>
+                    </p>
+
+                    <p class="text-soft mb-2">
+                        <strong>Vibo Valentia</strong><br>
+                        Viale Giacomo Matteotti, 74
+                    </p>
+
+                    <p class="text-soft mb-3">
+                        <strong>Milano</strong><br>
+                        Via Fabio Filzi, 27
+                    </p>
+
+                    <p class="text-soft mb-2">
+                        <strong>Telefono:</strong> 0963 47 22 33
+                    </p>
+
+                    <p class="text-soft mb-1">
+                        <strong>Email segreteria:</strong><br>
+                        <a href="mailto:segreteria@studiofurnari.it">segreteria@studiofurnari.it</a>
+                    </p>
+
+                    <p class="text-soft mb-0">
+                        <strong>Email amministrazione:</strong><br>
+                        <a href="mailto:amministrazione@studiofurnari.it">amministrazione@studiofurnari.it</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<div th:replace="~{fragments/footer}"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
